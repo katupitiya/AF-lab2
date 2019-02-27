@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function  fetchUsers() {
+
+        return fetch('http://api.github.com/users').then(response => response.json());
+
+    }
+
+    fetchUsers().then(json =>{
+        console.log(json);
+        }
+    );
+
+//fetchUsers()  NetworkError when attempting to fetch resource.
+
+
+</script>
+
+</body>
+</html>
